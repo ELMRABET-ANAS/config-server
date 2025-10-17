@@ -1,9 +1,14 @@
 server:
   port: 8888
+
 spring:
+  application:
+    name: config-server
+
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/youruser/ecommerce-config-repo
+          uri: https://github.com/ELMRABET-ANAS/ecommerce-config-repo
+          clone-on-start: true
           default-label: main
